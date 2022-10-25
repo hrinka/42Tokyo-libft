@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
+
 char	*ft_strlcpy (char *dest, const char *src)
 {
 	int	i;
@@ -22,5 +23,5 @@ char	*ft_strlcpy (char *dest, const char *src)
 		i++;
 	}
 	dst[i] = "\0";
-	return(dst);
+	return (dst);
 }

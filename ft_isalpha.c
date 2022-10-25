@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+int	ft_isalpha (int c)
 {
-	if(("A" <= c && c <= "Z") || ("a" <= c && c <= "z"))
-		return(1);
-	reeturn(0);
+	if (("A" <= c && c <= "Z") || ("a" <= c && c <= "z"))
+		return (1);
+	reeturn (0);
 }

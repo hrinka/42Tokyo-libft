@@ -6,11 +6,12 @@
 /*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 22:53:07 by hrinka            #+#    #+#             */
-/*   Updated: 2022/10/06 23:07:55 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/10/17 08:41:29 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
+
 size_t	ft_strlen(const char* s)
 {
 	size_t l;
