@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 00:07:08 by hrinka            #+#    #+#             */
-/*   Updated: 2022/10/16 00:24:11 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/10/25 15:11:44 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void	ft_bzero (void *s, size_t n)
+
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
 	char	*str;
@@ -19,7 +20,7 @@ void	ft_bzero (void *s, size_t n)
 	if (n == 0)
 		return ;
 	i = 0;
-	str == (char *)s;
+	str = (char *)s;
 	while (i < n)
 		str[i++] = 0;
 	return ;

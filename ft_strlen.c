@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 22:53:07 by hrinka            #+#    #+#             */
-/*   Updated: 2022/10/17 08:41:29 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/10/25 13:56:26 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char* s)
+size_t	ft_strlen(const char *s)
 {
-	size_t l;
+	size_t	l;
+
 	l = 0;
 	if (s[l] != 0)
 		l++;

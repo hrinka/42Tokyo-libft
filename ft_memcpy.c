@@ -3,24 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 23:17:43 by hrinka            #+#    #+#             */
-/*   Updated: 2022/10/15 23:39:55 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/10/25 22:12:58 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy (void	*dst, const void *src, size_t	n)
+void	*ft_memcpy(void	*dst, const void *src, size_t	n)
 {
-	const char	*tmp1;
-	char	*tmp2;
+	const unsigned char	*s;
+	unsigned char		*tmp2;
+
 	if (dst == NULL && src == NULL)
 		return (NULL);
-	tmp1 = (const char	*)src;
-	tmp2 = (char *)dst;
+	s = (const unsigned char *)src;
+	tmp2 = (unsigned char *)dst;
 	while (n--)
-		*tmp++ = *tmp1++;
+		*tmp2++ = *s++;
 	return (dst);
 }
