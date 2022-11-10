@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 22:53:07 by hrinka            #+#    #+#             */
-/*   Updated: 2022/10/25 13:56:26 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/10 20:12:29 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	l;
 
 	l = 0;
-	if (s[l] != 0)
+	while (s[l] != 0)
 		l++;
 	return (l);
 }

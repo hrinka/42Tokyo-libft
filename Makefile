@@ -6,9 +6,10 @@
 #    By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 17:01:44 by hrinka            #+#    #+#              #
-#    Updated: 2022/11/03 17:27:49 by hrinka           ###   ########.fr        #
+#    Updated: 2022/11/10 19:57:58 by hrinka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
 					ft_strlcat.c ft_strncmp.c ft_substr.c ft_atoi.c ft_isalpha.c \
