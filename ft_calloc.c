@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 23:37:29 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/12 01:52:45 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/15 12:46:41 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,24 +23,24 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ptr);
 }
 
-int	main (void)
-{
-	long * pMMem;	//for malloc
-	long * pCMem;	//for calloc
-	long * ftMem;	//for ft_calloc
+// int	main (void)
+// {
+// 	long	*pMMem;	//for malloc
+// 	long	*pCMem;	//for calloc
+// 	long	*ftMem;	//for ft_calloc
 
-	pMMem = (long *)malloc (sizeof(long) * 3);
-	pCMem = (long *)calloc (3, sizeof(long));
-	ftMem = (long *)ft_calloc (3,sizeof(long));
+// 	pMMem = (long *)malloc (sizeof(long) * 3);
+// 	pCMem = (long *)calloc (3, sizeof(long));
+// 	ftMem = (long *)ft_calloc (3, sizeof(long));
 
-	//確保領域の初期値表示
-	printf("malloc [0]:0x%08x, [1]:0x%08x, [2]:0x%08x\n", pMMem[0], pMMem[1], pMMem[2]);
-	printf("calloc [0]:0x%08x, [1]:0x%08x, [2]:0x%08x\n", pCMem[0], pCMem[1], pCMem[2]);
-	printf("ft_calloc [0]:0x%08x, [1]:0x%08x, [2]:0x%08x\n", ftMem[0], ftMem[1], ftMem[2]);
+// 	//確保領域の初期値表示
+// 	printf("malloc [0]:%ld, [1]:%ld, [2]:%ld\n", pMMem[0], pMMem[1], pMMem[2]);
+// 	printf("calloc [0]:%ld, [1]:%ld, [2]:%ld\n", pCMem[0], pCMem[1], pCMem[2]);
+// 	printf("ft_calloc %ld, %ld, %ld\n", ftMem[0], ftMem[1], ftMem[2]);
 
-	free(pMMem);
-	free(pCMem);
-	free(ftMem);
+// 	free(pMMem);
+// 	free(pCMem);
+// 	free(ftMem);
 
-	return(0);
-}
+// 	return (0);
+// }
