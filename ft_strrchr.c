@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:46:41 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/08 16:22:36 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/17 22:30:57 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,29 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
+	char	*last;
 	size_t	i;
 
-	i = strlen(s);
-	while (i >= 0)
+	last = (char *)s;
+	i = ft_strlen(s);
+	while (i > 0)
 	{
-		if (s[i] == c)
-			return ((char *) &s[i]);
+		if (last[i] == c)
+			return (last + i);
 		i--;
 	}
+	if (last[i] == c)
+		return (last);
 	return (0);
 }
 
-//int	main(void)
-// {
-// 	char	*str;
-// 	char	c;
+int	main(void)
+{
+	char	*str;
+	char	c;
 
-// 	str = "ahijidfjijdiji8hhqhj";
-// 	c = 'j';
-// 	printf("%p\n", strrchr(str, c));
-// 	printf("%p\n", ft_strrchr(str, c));
-// }
+	str = "abcdefghi";
+	c = 'z';
+	printf("%p\n", strrchr(str, c));
+	printf("%p\n", ft_strrchr(str, c));
+}

@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:05:53 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/15 15:47:13 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/17 19:09:52 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (ret);
 }
 
-int	main(void)
-{
-	printf ("%s\n", ft_strjoin("Billionare", "BoysClub"));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf ("%s\n", ft_strjoin("Billionare", "BoysClub"));
+// 	return (0);
+// }

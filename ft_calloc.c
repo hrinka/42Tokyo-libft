@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 23:37:29 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/15 12:46:41 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/17 21:07:27 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	ptr = malloc (count * size);
-	if (ptr == NULL)
+	if (SIZE_MAX / size < count)
+		return (NULL);
+	if (!(ptr = malloc(count * size)))
 		return (NULL);
 	ft_bzero (ptr, size * count);
 	return (ptr);
@@ -29,9 +30,9 @@ void	*ft_calloc(size_t count, size_t size)
 // 	long	*pCMem;	//for calloc
 // 	long	*ftMem;	//for ft_calloc
 
-// 	pMMem = (long *)malloc (sizeof(long) * 3);
-// 	pCMem = (long *)calloc (3, sizeof(long));
-// 	ftMem = (long *)ft_calloc (3, sizeof(long));
+// 	pMMem = (long *)malloc (sizeof(long) * '\0');
+// 	pCMem = (long *)calloc (SIZE_MAX, SIZE_MAX);
+// 	ftMem = (long *)ft_calloc (SIZE_MAX, SIZE_MAX);
 
 // 	//確保領域の初期値表示
 // 	printf("malloc [0]:%ld, [1]:%ld, [2]:%ld\n", pMMem[0], pMMem[1], pMMem[2]);

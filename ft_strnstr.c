@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 17:23:18 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/10 20:29:02 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/17 20:33:29 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,35 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
-	size_t	l2;
+	unsigned int	i;
+	unsigned int	j;
 
+	if (needle[0] == '\0')
+		return ((char *)haystack);
 	i = 0;
-	l2 = ft_strlen(needle);
-	if (l2 == 0)
-		return ((char *) haystack);
-	while (len >= l2)
+	while (haystack[i] && i < len)
 	{
-		len--;
-		if (!ft_memcmp(haystack, needle, l2))
-			return ((char *) haystack);
-		haystack++;
+		j = 0;
+		if (haystack[i] == needle[j])
+		{
+			while (i + j < len && haystack[i + j] == needle[j])
+			{
+				j++;
+				if (!needle[j])
+					return ((char *)&haystack[i]);
+			}
+		}
+		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
-int	main(void)
-{
-	const char	*largestring = "aabbbcdef";
-	const char	*smallstring = "bbc";
 
-	printf ("%s\n", strnstr(largestring, smallstring, 6));
-	printf ("%s\n", ft_strnstr(largestring, smallstring, 6));
-}
+// int	main(void)
+// {
+// 	const char	*largestring = "";
+// 	const char	*smallstring = "bbc";
+
+// 	printf ("%s\n", strnstr(largestring, smallstring, 6));
+// 	printf ("%s\n", ft_strnstr(largestring, smallstring, 6));
+// }

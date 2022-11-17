@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 23:40:21 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/15 15:43:49 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/17 20:13:36 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,30 @@
 
 char	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	c;
-	size_t	d;
+	size_t	i;
+	size_t	j;
 
-	if (dstsize == 0 || dstsize <= ft_strlen(dst))
-		return (dstsize + ft_strlen(src));
-	c = ft_strlen(dst);
-	d = 0;
-	while (src[d] != '\0' && c + 1 < dstsize)
+	i = 0;
+	j = 0;
+	while (dst[i] && i < dstsize)
+		i++;
+	while (src[j] && (i + j + 1) < dstsize)
 	{
-		dst[c] = src[d];
-		c++;
-		d++;
+		dst[i + j] = src[j];
+		j++;
 	}
-	dst[c] = '\0';
-	return (ft_strlen(dst) + ft_strlen(src));
+	if (i < dstsize)
+		dst[i + j] = '\0';
+	return (i + ft_strlen(src));
 }
+
+// int	main(void)
+// {
+// 	char	dest[20] = "ABCDE";
+// 	char	src[] = "1234";
+// 	int		dstsize = 8;
+
+//     unsigned int result = ft_strlcat(dest, src, dstsize);
+//     printf("%s: %u\n", dest, result);
+//     return(0);
+// }
