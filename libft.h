@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 21:52:46 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/22 13:43:38 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/26 20:45:10 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 
 char	**ft_split(char const *str, char c);
+char	*ft_itoa(int n);
+char	*strmapi(char const *s, char (*f)(unsigned int, char));
 #endif
