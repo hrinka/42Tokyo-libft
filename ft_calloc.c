@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 23:37:29 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/17 21:07:27 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 16:59:29 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 
 	if (SIZE_MAX / size < count)
 		return (NULL);
-	if (!(ptr = malloc(count * size)))
+	ptr = malloc(count * size);
+	if (!ptr)
 		return (NULL);
 	ft_bzero (ptr, size * count);
 	return (ptr);

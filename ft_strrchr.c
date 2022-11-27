@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:46:41 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/17 22:30:57 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 16:57:41 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,13 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-int	main(void)
-{
-	char	*str;
-	char	c;
+// int	main(void)
+// {
+// 	char	*str;
+// 	char	c;
 
-	str = "abcdefghi";
-	c = 'z';
-	printf("%p\n", strrchr(str, c));
-	printf("%p\n", ft_strrchr(str, c));
-}
+// 	str = "abcdefghi";
+// 	c = 'z';
+// 	printf("%p\n", strrchr(str, c));
+// 	printf("%p\n", ft_strrchr(str, c));
+// }

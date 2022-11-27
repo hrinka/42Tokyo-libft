@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/27 12:44:56 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 14:37:02 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 16:58:09 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	if (!s || !f)
-		return;
+		return ;
 	i = 0;
 	while (s[i])
 	{
