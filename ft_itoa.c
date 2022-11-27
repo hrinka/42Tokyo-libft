@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 16:52:31 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/26 21:07:37 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 17:36:46 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 
 static int	ft_digit_count(int n)
 {
-	long int	nb;
 	int			i;
 
-	nb = n;
 	i = 0;
 	if (n == -2147483648)
 		return (11);

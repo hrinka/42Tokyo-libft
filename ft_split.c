@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 23:05:10 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/26 16:36:55 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 18:41:01 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,6 @@ size_t	ft_setchar(char *dst, char const *src, char c)
 {
 	size_t	i;
 
-	if (c == 0)
-		return (0);
 	i = 0;
 	while (src[i] != '\0' && src[i] != c)
 	{
@@ -107,11 +105,12 @@ char	**ft_split(char const *s, char c)
 // int	main(void)
 // {
 // 	int i;
-// 	char	**tab = ft_split("", ',');
+// 	char	**tab = ft_split("hoge", 0);
 // 	i = 0;
-// 	while (i < num_words("", ',') + 1)
+// 	while (i < num_words("hoge", 0) + 1)
 // 	{
 // 		printf("tab[%d] = %s\n", i, tab[i]);
 // 		i++;
 // 	}
 // 	return (0);
+// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:46:41 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 16:57:41 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 18:16:10 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ char	*ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	while (i > 0)
 	{
-		if (last[i] == c)
+		if (last[i] == (char)c)
 			return (last + i);
 		i--;
 	}
-	if (last[i] == c)
+	if (last[i] == (char)c)
 		return (last);
 	return (0);
 }
@@ -37,6 +37,6 @@ char	*ft_strrchr(const char *s, int c)
 
 // 	str = "abcdefghi";
 // 	c = 'z';
-// 	printf("%p\n", strrchr(str, c));
-// 	printf("%p\n", ft_strrchr(str, c));
+// 	printf("%s\n", strrchr(str, c));
+// 	printf("%s\n", ft_strrchr(str, c));
 // }
