@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 22:18:37 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 21:47:28 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 23:28:34 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 
 	d = (unsigned char *) dest;
 	s = (const unsigned char *) src;
-
 	if (!d && !s)
 		return (NULL);
 	if (d > s)

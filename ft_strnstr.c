@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 17:23:18 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 21:58:43 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 23:29:26 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-
-// int	main(void)
-// {
-// 	const char	*largestring = "";
-// 	const char	*smallstring = "bbc";
-
-// 	printf ("%s\n", strnstr(largestring, smallstring, 6));
-// 	printf ("%s\n", ft_strnstr(largestring, smallstring, 6));
-// }

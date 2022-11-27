@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:53:02 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 22:10:49 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 23:29:03 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 
 	if (!set)
-		return ft_strdup(s1);
+		return (ft_strdup(s1));
 	if (!s1)
 		return (NULL);
 	front = 0;
