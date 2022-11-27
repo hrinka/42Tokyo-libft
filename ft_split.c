@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 23:05:10 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 18:41:01 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 22:12:44 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,8 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
+	if (!s)
+		return (NULL);
 	tab = (char **)malloc((num_words(s, c) + 1) * sizeof(char *));
 	if (!tab)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 21:52:46 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 18:22:47 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 19:09:26 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 void	*ft_memcpy(void	*dst, const void *src, size_t	n);
 void	*ft_memset(void	*d, int c, size_t len);
-char	ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
 

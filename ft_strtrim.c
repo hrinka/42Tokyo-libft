@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:53:02 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/17 19:11:05 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/11/27 22:10:49 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	rear;
 	char	*str;
 
+	if (!set)
+		return ft_strdup(s1);
+	if (!s1)
+		return (NULL);
 	front = 0;
 	rear = ft_strlen(s1);
 	while (s1[front] && ft_strchr(set, s1[front]))
