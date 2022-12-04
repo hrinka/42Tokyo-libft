@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 23:09:28 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/17 18:43:40 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 14:33:04 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	if (size == 0)
 		return (ft_strlen(src));
 	i = 0;
-	while (src[i] != '\0' && i < size - 1)
+	while (i + 1 < size && src[i] != '\0')
 	{
 		dst[i] = src[i];
 		i++;

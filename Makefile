@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+         #
+#    By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 17:01:44 by hrinka            #+#    #+#              #
-#    Updated: 2022/11/27 17:48:58 by hrinka           ###   ########.fr        #
+#    Updated: 2022/12/04 14:13:18 by hrinka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,11 +22,6 @@ SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c \
 					ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJS			= $(SRCS:.c=.o)
-
-# BONUS			=	ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
-# 					ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
-# 					ft_lstmap.c ft_lstnew.c ft_lstsize.c
-BONUS_OBJS		= $(BONUS:.c=.o)
 
 CC				= gcc
 RM				= rm -f

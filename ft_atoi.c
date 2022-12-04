@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 21:06:30 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 19:30:52 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 14:59:45 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_atoi(const char	*str)
 
 // int	main(void)
 // {
-// 	char	str[]= "-153678";
+// 	char	str[]= "18446744073709551614";
 
 // 	printf ("%d\n", ft_atoi(str));
 // 	printf ("%d\n", atoi (str));
