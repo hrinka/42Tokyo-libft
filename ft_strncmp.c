@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 21:43:36 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 19:19:10 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 18:38:41 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,16 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-// int main(void)
-// {
-// 	char *str1;
-// 	char *str2;
+int main(void)
+{
+	char *str1;
+	char *str2;
 
-// 	int	n;
+	int	n;
 
-// 	str1 = "abcdefgh";
-// 	str2 = "abcdeqqq";
-// 	n = 6;
-// 		printf("%d\n", strncmp(str1, str2, n));
-// 		printf("%d\n", ft_strncmp(str1, str2, n));
-// }
+	str1 = "abcd";
+	str2 = "abcdeqqq";
+	n = 6;
+		printf("%d\n", strncmp(str1, str2, n));
+		printf("%d\n", ft_strncmp(str1, str2, n));
+}

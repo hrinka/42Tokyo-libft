@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 13:12:26 by hrinka            #+#    #+#             */
-/*   Updated: 2022/12/04 14:59:22 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 20:21:47 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (ft_strlen(s) < start)
-	{
-		ptr = (char *) malloc (sizeof (char));
-		if (!ptr)
-			return (NULL);
-		*ptr = '\0';
-		return (ptr);
-	}
+		return (ft_strdup(""));
 	if (ft_strlen(s) - start > len)
 		i = len + 1;
 	else
@@ -46,9 +40,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	// if (s == NULL)
 	// 	return (NULL);
-	// if (ft_strlen(s) < start)
-	// 	len = 0;
-	// if (ft_strlen(s + start) < len)
+	// if (start > ft_strlen(s))
+	// start = ft_strlen(s);
+	// if (ft_strlen(s) + start < len)
 	// 	len = ft_strlen(s + start);
 	// ret = malloc(sizeof(char) * (len + 1));
 	// if (ret == NULL)

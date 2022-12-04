@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:05:53 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/17 19:09:52 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 18:52:41 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	len;
 
 	if (s1 == NULL || s2 == NULL)
-		return (0);
+		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2);
 	ret = malloc (sizeof(char) * (len + 1));
 	if (ret == NULL)
-		return (0);
+		return (NULL);
 	ft_strlcpy (ret, s1, len + 1);
 	ft_strlcat (ret, s2, len + 1);
 	return (ret);

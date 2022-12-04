@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 15:53:02 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 23:29:03 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 20:59:48 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	rear;
 	char	*str;
 
-	if (!set)
-		return (ft_strdup(s1));
 	if (!s1)
 		return (NULL);
+	if (!set)
+		return (ft_strdup(s1));
 	front = 0;
 	rear = ft_strlen(s1);
 	while (s1[front] && ft_strchr(set, s1[front]))
@@ -35,11 +35,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str);
 }
 
-// int	main(void)
-// {
-// 	printf("%s\n", ft_strtrim("abqbc","abc"));
-// 	printf("%s\n", ft_strtrim("xgshegdhayz", "xyz"));
-// }
+int	main(void)
+{
+	printf("%s\n", ft_strtrim("abcdef","abcdef"));
+	printf("%s\n", ft_strtrim("xgshegdhayz", "xyz"));
+}
 
 // {
 // 	size_t	i;

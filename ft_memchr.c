@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 12:55:43 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 21:45:53 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 17:26:59 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (*(unsigned char *) s == (unsigned char) c)
-			return ((unsigned char *)s);
+			return ((void *)s);
 		s++;
 		i++;
 	}

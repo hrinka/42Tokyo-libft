@@ -3,21 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrinka <hrinka@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 16:52:31 by hrinka            #+#    #+#             */
-/*   Updated: 2022/11/27 22:05:47 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 20:37:24 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
 static int	ft_digit_count(int n)
 {
 	int			i;
 
 	i = 0;
-	if (n == -2147483648)
+	if (n == INT_MIN)
 		return (11);
 	if (n <= 0)
 	{
@@ -74,3 +75,4 @@ char	*ft_itoa(int n)
 // 	/* 16. INT_MIN + 1 */ printf("%s\n", ft_itoa(n5));
 // 	return (0);
 // }
+

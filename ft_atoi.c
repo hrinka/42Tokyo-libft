@@ -6,7 +6,7 @@
 /*   By: hrinka <hrinka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 21:06:30 by hrinka            #+#    #+#             */
-/*   Updated: 2022/12/04 14:59:45 by hrinka           ###   ########.fr       */
+/*   Updated: 2022/12/04 20:31:21 by hrinka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char	*str)
 {
-	int	num;
-	int	i;
-	int	neg;
+	long		num;
+	size_t	i;
+	int		neg;
 
 	num = 0;
 	i = 0;
@@ -32,7 +32,7 @@ int	ft_atoi(const char	*str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		num = num * 10 + (str[i] - 48);
+		num = num * 10 + (str[i] - '0');
 		i++;
 	}
 	return (num * neg);
